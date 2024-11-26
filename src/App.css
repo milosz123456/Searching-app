@@ -14,34 +14,33 @@ h1, h2, h3 {
   margin: 20px; 
 }
 
-/* Navbar Styles */
-/* Navbar Styles */
+
 .navbar {
-  width: 100%; /* Full width */
-  background-color: #007bff; /* Blue background for navbar */
-  color: white; /* White text color */
-  margin-bottom: 20px; /* Space below the navbar */
-  padding: 10px; /* Padding for navbar */
+  width: 100%; 
+  background-color: #007bff;
+  color: white;
+  margin-bottom: 20px; 
+  padding: 10px; 
 }
 
 .navbar-brand {
-  font-size: 1.5rem; /* Size of the brand text */
-  font-weight: bold; /* Bold text */
-  color: white; /* Ensure brand text is white */
+  font-size: 1.5rem; 
+  font-weight: bold;
+  color: white; 
 }
 
 .navbar a {
-  color: white; /* White text color for links */
-  text-decoration: none; /* Remove underline from links */
-  margin: 0 15px; /* Space between links */
-  transition: color 0.3s; /* Smooth color transition */
+  color: white; 
+  text-decoration: none; 
+  margin: 0 15px;
+  transition: color 0.3s;
 }
 
 .navbar a:hover {
-  color: #ffc107; /* Change link color on hover (yellow) */
+  color: #ffc107; 
 }
 
-/* Optional: Add a more distinct hover effect */
+
 .navbar a:focus {
   outline: none; /* Remove default outline */
   border-bottom: 2px solid #ffc107; /* Add underline on focus */
@@ -54,7 +53,7 @@ h1, h2, h3 {
   margin: 20px; 
 }
 
-/* Home Component */
+
 .home {
   padding: 20px; 
   text-align: center;
