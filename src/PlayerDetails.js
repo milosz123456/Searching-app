@@ -38,7 +38,7 @@ function PlayerDetails() {
             {player && (
                 <div>
                     <h1>{player.strPlayer}</h1>
-                    <img src={player.strThumb} alt={player.strPlayer} style={{ width: '100px' }} />
+                    <img src={player.strThumb} alt={player.strPlayer} />
                     <p><strong>Position:</strong> {player.strPosition}</p>
                     <p><strong>Team:</strong> {player.strTeam}</p>
                     <p><strong>Nationality:</strong> {player.strNationality}</p>

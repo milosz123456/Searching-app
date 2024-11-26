@@ -1,38 +1,149 @@
-.App {
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e9ecef; 
+  color: #343a40; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+h1, h2, h3 {
+  margin: 20px; 
+}
+
+/* Navbar Styles */
+/* Navbar Styles */
+.navbar {
+  width: 100%; /* Full width */
+  background-color: #007bff; /* Blue background for navbar */
+  color: white; /* White text color */
+  margin-bottom: 20px; /* Space below the navbar */
+  padding: 10px; /* Padding for navbar */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Size of the brand text */
+  font-weight: bold; /* Bold text */
+  color: white; /* Ensure brand text is white */
+}
+
+.navbar a {
+  color: white; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+  margin: 0 15px; /* Space between links */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar a:hover {
+  color: #ffc107; /* Change link color on hover (yellow) */
+}
+
+/* Optional: Add a more distinct hover effect */
+.navbar a:focus {
+  outline: none; /* Remove default outline */
+  border-bottom: 2px solid #ffc107; /* Add underline on focus */
+}
+
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 20px; 
+}
+
+/* Home Component */
+.home {
+  padding: 20px; 
+  text-align: center;
+  background-color: #21bef8;
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+input[type="text"] {
+  padding: 10px; 
+  border: 1px solid #ced4da; 
+  border-radius: 4px; 
+  width: 200px; 
+  margin-right: 10px; 
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #28a745; 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+button:hover {
+  background-color: #218838; 
+}
+
+/* Team and Player List Styles */
+.team-list, .player-list {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center; 
+  margin: 20px;
+}
+
+.team-card, .player-card {
+  border: 1px solid #ced4da; 
+  border-radius: 4px; 
+  padding: 15px;
+  margin: 10px; 
+  width: 200px; 
+  text-align: center;
+  background-color: #ffffff; 
+  transition: box-shadow 0.3s; 
+}
+
+.team-card:hover, .player-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.team-card img, .player-card img {
+  width: 100%; 
+  height: auto; 
+}
+
+
+.error {
+  color: red; 
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.league-details, .player-details {
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.league-details img, .player-details img {
+  width: 50vw;
+  height: 50vh; 
+  margin: 10px; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Centering Forms */
+form {
+  display: flex; 
+  justify-content: center; 
+  margin: 20px 0; 
+  background-color: #f8f9fa; 
+  padding: 15px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input[type="text"] {
+  margin-right: 10px; 
 }

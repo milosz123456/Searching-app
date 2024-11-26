@@ -34,7 +34,7 @@ function TeamSearch() {
             <div>
                 {teams.length > 0 ? (
                     teams.map(team => (
-                        <div key={team.idTeam} style={{ marginBottom: '20px', border: '1px solid #ccc', padding: '10px' }}>
+                        <div key={team.idTeam}>
                             <h3>{team.strTeam}</h3>
                             <img src={team.strBadge} />
                             <p><strong>League:</strong> {team.strLeague}</p>

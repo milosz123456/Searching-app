@@ -49,7 +49,7 @@ function PlayerSearch() {
                 {players.length > 0 ? (
                     players.map((player) => (
                         <li key={player.idPlayer} onClick={() => handlePlayerClick(player.idPlayer)} style={{ cursor: 'pointer' }}>
-                            <img src={player.strThumb} alt={player.strPlayer} style={{ width: '50px' }} />
+                            <img src={player.strThumb} alt={player.strPlayer} />
                             <h2>{player.strPlayer}</h2>
                         </li>
                     ))

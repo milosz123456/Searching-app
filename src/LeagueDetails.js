@@ -60,7 +60,7 @@ function LeagueDetails() {
                                 <li key={team.idTeam}>
                                     <h3>{team.strTeam}</h3>
                                     <p>{team.strDescriptionEN}</p>
-                                    <img src={team.strTeamBadge} alt={`${team.strTeam} badge`} style={{ width: '50px' }} />
+                                    <img src={team.strTeamBadge} alt={`${team.strTeam} badge`} />
                                 </li>
                             ))}
                         </ul>
