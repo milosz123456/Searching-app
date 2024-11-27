@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; 
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -10,16 +13,11 @@ body {
   align-items: center;
 }
 
-h1, h2, h3 {
-  margin: 20px; 
-}
-
-
 .navbar {
-  width: 100%; 
+  width: 100vw; 
   background-color: #007bff;
   color: white;
-  margin-bottom: 20px; 
+  margin: 0; 
   padding: 10px; 
 }
 
@@ -32,7 +30,6 @@ h1, h2, h3 {
 .navbar a {
   color: white; 
   text-decoration: none; 
-  margin: 0 15px;
   transition: color 0.3s;
 }
 
@@ -40,19 +37,16 @@ h1, h2, h3 {
   color: #ffc107; 
 }
 
-
 .navbar a:focus {
-  outline: none; /* Remove default outline */
-  border-bottom: 2px solid #ffc107; /* Add underline on focus */
+  outline: none; 
+  border-bottom: 2px solid #ffc107; 
 }
-
 
 .loading {
   text-align: center;
   font-size: 1.5rem;
   margin: 20px; 
 }
-
 
 .home {
   padding: 20px; 
@@ -61,7 +55,6 @@ h1, h2, h3 {
   border-radius: 8px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
-
 
 input[type="text"] {
   padding: 10px; 
@@ -84,7 +77,6 @@ button:hover {
   background-color: #218838; 
 }
 
-/* Team and Player List Styles */
 .team-list, .player-list {
   display: flex; 
   flex-wrap: wrap;
@@ -108,10 +100,9 @@ button:hover {
 }
 
 .team-card img, .player-card img {
-  width: 100%; 
-  height: auto; 
+  width: 100vw; 
+  height: 100vh; 
 }
-
 
 .error {
   color: red; 
@@ -132,7 +123,7 @@ button:hover {
   margin: 10px; 
 }
 
-/* Centering Forms */
+
 form {
   display: flex; 
   justify-content: center; 
